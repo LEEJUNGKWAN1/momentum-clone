@@ -1,3 +1,14 @@
 .hidden {
   display: none;
 }
+
+/* 배경 사진 */
+.fullscreen-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
