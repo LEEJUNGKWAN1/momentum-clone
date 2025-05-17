@@ -1,6 +1,7 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
+const todoText = document.querySelector("#todo-text");
 
 const TODOS_KEY = "todos";
 
@@ -51,4 +52,10 @@ if (savedToDos !== null) {
   const parsedToDos = JSON.parse(savedToDos);
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
+}
+
+if (savedUsername === null) {
+  todoText.classList.add("hidden");
+  toDoForm.classList.add("hidden");
+  toDoList.classList.add("hidden");
 }

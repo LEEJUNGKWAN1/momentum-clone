@@ -2,7 +2,6 @@
   display: none;
 }
 
-/* 배경 사진 */
 .fullscreen-image {
   width: 100vw;
   height: 100vh;
@@ -10,5 +9,157 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -2;
+}
+
+#overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
+}
+
+#clock {
+  font-size: 130px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#greeting {
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#login-text {
+  font-size: 50px;
+  font-weight: 300;
+  font-weight: 500;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+form#login-form input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 445px;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+form#login-form input::placeholder {
+  color: white;
+}
+
+#todo-text {
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+form#todo-form input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 410px;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+
+#todo-list {
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  width: 30vw;
+  height: 30vh;
+  top: 79%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#todo-list button {
+  border: none;
+  background: none;
+  color: white;
+  position: absolute;
+  left: 99%;
+  font-weight: bold;
+}
+
+/* #todo-form {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+#quote {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100vw;
+}
+
+#quote div:last-child {
+  font-size: 15px;
+  width: 100vw;
+}
+
+#weather {
+  font-size: 20px;
+  color: white;
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  text-align: right;
+}
+
+#weather div:last-child {
+  font-size: 15px;
 }

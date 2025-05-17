@@ -4,7 +4,7 @@ const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 const bgImage = document.createElement("img");
 
-bgImage.classList.add("fullscreen-image"); // 클래스 지정
+bgImage.classList.add("fullscreen-image");
 
 bgImage.src = `img/${chosenImage}`;
 
